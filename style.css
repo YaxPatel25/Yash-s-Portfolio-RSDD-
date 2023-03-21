@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: rgb(238, 222, 222);
 }
 .header{
     background-color: rgb(247, 188, 111);
@@ -23,26 +24,30 @@ body{
 }
 .parent{
     display: flex;
-    height: 900px;
+    height: 950px;
 }
 .parent1{
     display: flex;
 }
 .mainSection{
-    background-color: rgb(73, 126, 172);
+    background-color: rgb(238, 222, 222);
     width: 75%;
 }
 .sideBar{
-    background-color: aquamarine;
+    background-color: rgb(238, 222, 222);
     width: 25%;
 }
 .profilepic{
+    animation: fadeIn 3s;
     height: 300px;
     width: 250px;
     margin: 100px 0 0 70px;
 }
 .introtext{
     margin: 60px 40px 0 100px;
+}
+.intro{
+    text-decoration: underline;
 }
 ul{
     font-size: 30px;
@@ -51,7 +56,9 @@ li{
     margin: 15px 0 15px 0;
 }
 a{
-    color: black;
+    color: rgb(127, 131, 243);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
     text-decoration: none;
 }
 .skills{
@@ -63,3 +70,43 @@ a{
     font-size: 35px;
     text-decoration: underline;
 }
+.country{
+    background-color: rgb(160, 251, 194);
+    height: 750px;
+    padding-top: 15px;
+}
+.countryTitle{
+    text-align: center;
+    text-decoration: underline;
+}
+.aboutIndia{
+    margin-left: 100px;
+}
+.indiaVideo{
+    animation: fadeIn 5s;
+    margin: 20px 0 0 280px;
+    height: 70vh;
+    width: 120vh;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .footer {
+    /* position: relative; */
+    /* left: 0;
+    bottom: 0; */
+    margin-top: 30px;
+    padding-top: 30px;
+    width: 100%;
+    background-color: rgb(3, 18, 68);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    height: 100px;
+  }
